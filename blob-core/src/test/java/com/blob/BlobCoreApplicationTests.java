@@ -21,7 +21,7 @@ public class BlobCoreApplicationTests {
 		
 		System.out.println("   no of conatcts >>>  "+contactDao.count());
 		
-		
+		System.out.println("   no of conatcts >>>  "+contactDao.count());
 	}
 
 }
