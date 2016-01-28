@@ -15,6 +15,11 @@ public class Contact {
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private Long id;
 	
+	@Override
+	public String toString() {
+		return "Contact [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + "]";
+	}
+
 	@Column(name="firstName")
 	private String firstName;
 	

@@ -22,6 +22,11 @@ public class Company {
 		return id;
 	}
 
+	@Override
+	public String toString() {
+		return "Company [id=" + id + ", name=" + name + "]";
+	}
+
 	public void setId(Long id) {
 		this.id = id;
 	}

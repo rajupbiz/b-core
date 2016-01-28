@@ -11,6 +11,11 @@ import javax.persistence.Table;
 @Table(name="customer")
 public class Customer {
 
+	@Override
+	public String toString() {
+		return "Customer [id=" + id + ", name=" + name + "]";
+	}
+
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private Long id;	
