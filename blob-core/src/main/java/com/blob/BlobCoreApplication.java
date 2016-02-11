@@ -9,6 +9,8 @@ public class BlobCoreApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(BlobCoreApplication.class, args);
 		
+		
+		
 		System.out.println("   BlobCoreApplication  ...  ");
 	}
 }
