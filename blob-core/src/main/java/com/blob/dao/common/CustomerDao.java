@@ -1,6 +1,6 @@
-package com.blob.dao;
+package com.blob.dao.common;
 
-import com.blob.model.Customer;
+import com.blob.model.common.Customer;
 
 public interface CustomerDao extends GenericDao<Customer, Long> {
 

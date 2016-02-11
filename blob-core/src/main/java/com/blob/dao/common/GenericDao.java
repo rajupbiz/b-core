@@ -1,4 +1,4 @@
-package com.blob.dao;
+package com.blob.dao.common;
 
 import java.io.Serializable;
 
