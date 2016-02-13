@@ -1,8 +1,8 @@
 package com.blob.dao.master;
 
 import com.blob.dao.common.GenericDao;
-import com.blob.model.Employee;
+import com.blob.model.master.MasterRelationship;
 
-public interface MasterRelationshipDao extends GenericDao<Employee, Long> {
+public interface MasterRelationshipDao extends GenericDao<MasterRelationship, Long> {
 
 }
