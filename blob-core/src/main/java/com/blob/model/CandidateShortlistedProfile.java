@@ -20,26 +20,26 @@ public class CandidateShortlistedProfile {
 	private Long id;
 	
 	@ManyToOne
-	@JoinColumn(name="CandidateID")
+	@JoinColumn(name="candidate_id")
 	private Candidate candidate;
 	
 	@ManyToOne
-	@JoinColumn(name="ShortlistedCandidateID")
+	@JoinColumn(name="shortlisted_candidate_id")
 	private Candidate shortlistedCandidate;
 	
-	@Column(name="Status")
+	@Column(name="status")
 	private Character status;
 	
-	@Column(name="CreateUser")
+	@Column(name="create_user")
 	private Long createUser;
 	
-	@Column(name="CreateOn")
+	@Column(name="create_on")
 	private Date createOn;
 	
-	@Column(name="UpdateUser")
+	@Column(name="update_user")
 	private Long updateUser;
 	
-	@Column(name="UpdateOn")
+	@Column(name="update_on")
 	private Date updateOn;
 
 	public Long getId() {

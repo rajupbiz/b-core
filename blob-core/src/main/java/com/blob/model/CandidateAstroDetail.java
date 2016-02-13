@@ -30,70 +30,70 @@ public class CandidateAstroDetail {
 	private Long id;
 	
 	@OneToOne
-	@JoinColumn(name="CandidateID")
+	@JoinColumn(name="candidate_id")
 	private Candidate candidate;
 	
-	@Column(name="BirthDate")
+	@Column(name="birth_date")
 	private Date birthDate;
 
 	@OneToOne
-	@JoinColumn(name="BirthDayOfWeekID")
+	@JoinColumn(name="birth_day_of_week_id")
 	private MasterDayOfWeek birthDayOfWeek;
 	
 	@OneToOne
-	@JoinColumn(name="BirthTimeHHID")
+	@JoinColumn(name="birth_time_hh_id")
 	private MasterTimeHH birthTimeHHID;
 	
 	@OneToOne
-	@JoinColumn(name="BirthTimeMMID")
+	@JoinColumn(name="birth_time_mm_id")
 	private MasterTimeMM birthTimeMMID;
 	
 	@OneToOne
-	@JoinColumn(name="BirthTimeAMPMID")
+	@JoinColumn(name="birth_time_am_pm_id")
 	private MasterTimeAMPM birthTimeAMPMID;
 	
-	@Column(name="BirthPlace")
+	@Column(name="birth_place")
 	private String birthPlace;
 	
-	@Column(name="Mangal")
+	@Column(name="mangal")
 	private boolean mangal;
 	
-	@Column(name="BelieveInHoroscope")
+	@Column(name="believe_in_horoscope")
 	private boolean believeInHoroscope;
 	
-	@Column(name="Horo")
+	@Column(name="horo")
 	private String horo;
 	
 	@OneToOne
-	@JoinColumn(name="RashiID")
+	@JoinColumn(name="rashi_id")
 	private MasterRashi rashi;
 	
 	@OneToOne
-	@JoinColumn(name="GanID")
+	@JoinColumn(name="gan_id")
 	private MasterGan gan;
 	
 	@OneToOne
-	@JoinColumn(name="NadiID")
+	@JoinColumn(name="nadi_id")
 	private MasterNadi nadi;
 	
 	@OneToOne
-	@JoinColumn(name="NakshtraID")
+	@JoinColumn(name="nakshtra_id")
 	private MasterNakshtra nakshtra;
 	
 	@OneToOne
-	@JoinColumn(name="CharanID")
+	@JoinColumn(name="charan_id")
 	private MasterCharan charan;
 	
-	@Column(name="CreateUser")
+	@Column(name="create_user")
 	private Long createUser;
 	
-	@Column(name="CreateOn")
+	@Column(name="create_on")
 	private Date createOn;
 	
-	@Column(name="UpdateUser")
+	@Column(name="update_user")
 	private Long updateUser;
 	
-	@Column(name="UpdateOn")
+	@Column(name="update_on")
 	private Date updateOn;
 
 	public Long getId() {

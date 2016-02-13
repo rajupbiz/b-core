@@ -17,19 +17,19 @@ public class MasterBodyType {
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private Long id;
 	
-	@Column(name="BodyType")
+	@Column(name="body_type")
 	private String bodyType;
 	
-	@Column(name="BodyTypeDesc")
+	@Column(name="body_type_desc")
 	private String bodyTypeDesc;
 	
-	@Column(name="SequenceNumber")
+	@Column(name="sequence_number")
 	private int sequenceNumber;
 	
-	@Column(name="Status")
+	@Column(name="status")
 	private Character status;
 	
-	@Column(name="CreateOn")
+	@Column(name="create_on")
 	private Date createOn;
 
 	public Long getId() {

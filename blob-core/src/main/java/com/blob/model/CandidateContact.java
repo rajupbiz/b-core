@@ -25,33 +25,113 @@ public class CandidateContact {
 	private Long id;
 	
 	@ManyToOne
-	@JoinColumn(name="CandidateID")
+	@JoinColumn(name="candidate_id")
 	private Candidate candidate;
 	
 	@Embedded
 	private Contact conatct;
 	
 	@OneToOne
-	@JoinColumn(name="RelationshipID")
+	@JoinColumn(name="relationship_id")
 	private MasterRelationship relationship;
 
-	@Column(name="IsPrimaryContact")
+	@Column(name="is_primary_contact")
 	private boolean isPrimaryContact;
 	
-	@Column(name="Status")
+	@Column(name="status")
 	private Character status;
 	
-	@Column(name="CreateUser")
+	@Column(name="create_user")
 	private Long createUser;
 	
-	@Column(name="CreateOn")
+	@Column(name="create_on")
 	private Date createOn;
 	
-	@Column(name="UpdateUser")
+	@Column(name="update_user")
 	private Long updateUser;
 	
-	@Column(name="UpdateOn")
+	@Column(name="update_on")
 	private Date updateOn;
+
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+	public Candidate getCandidate() {
+		return candidate;
+	}
+
+	public void setCandidate(Candidate candidate) {
+		this.candidate = candidate;
+	}
+
+	public Contact getConatct() {
+		return conatct;
+	}
+
+	public void setConatct(Contact conatct) {
+		this.conatct = conatct;
+	}
+
+	public MasterRelationship getRelationship() {
+		return relationship;
+	}
+
+	public void setRelationship(MasterRelationship relationship) {
+		this.relationship = relationship;
+	}
+
+	public boolean isPrimaryContact() {
+		return isPrimaryContact;
+	}
+
+	public void setPrimaryContact(boolean isPrimaryContact) {
+		this.isPrimaryContact = isPrimaryContact;
+	}
+
+	public Character getStatus() {
+		return status;
+	}
+
+	public void setStatus(Character status) {
+		this.status = status;
+	}
+
+	public Long getCreateUser() {
+		return createUser;
+	}
+
+	public void setCreateUser(Long createUser) {
+		this.createUser = createUser;
+	}
+
+	public Date getCreateOn() {
+		return createOn;
+	}
+
+	public void setCreateOn(Date createOn) {
+		this.createOn = createOn;
+	}
+
+	public Long getUpdateUser() {
+		return updateUser;
+	}
+
+	public void setUpdateUser(Long updateUser) {
+		this.updateUser = updateUser;
+	}
+
+	public Date getUpdateOn() {
+		return updateOn;
+	}
+
+	public void setUpdateOn(Date updateOn) {
+		this.updateOn = updateOn;
+	}
 
 	
 

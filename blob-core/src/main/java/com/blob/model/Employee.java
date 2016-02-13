@@ -1,6 +1,6 @@
 package com.blob.model;
 
-import java.sql.Date;
+import java.util.Date;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -11,26 +11,23 @@ import javax.persistence.JoinColumn;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
+import com.blob.model.master.MasterEmployeeType;
+
 @Entity
-@Table(name="candidate_registration")
-public class CandidateRegistration {
+@Table(name="employee")
+public class Employee {
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
+	@GeneratedValue(strategy=GenerationType.AUTO)
 	private Long id;
 	
 	@OneToOne
-	@JoinColumn(name="candidate_id")
-	private Candidate candidate;
+	@JoinColumn(name="user_id")
+	private User user;
 	
-	@Column(name="registration_number")
-	private String registrationNumber;
-
-	@Column(name="registration_on")
-	private Date registrationOn;
-	
-	@Column(name="status")
-	private Character status;
+	@OneToOne
+	@JoinColumn(name="employee_type_id")
+	private MasterEmployeeType employeeType;
 	
 	@Column(name="create_user")
 	private Long createUser;
@@ -43,45 +40,13 @@ public class CandidateRegistration {
 	
 	@Column(name="update_on")
 	private Date updateOn;
-
+	
 	public Long getId() {
 		return id;
 	}
 
 	public void setId(Long id) {
 		this.id = id;
-	}
-
-	public Candidate getCandidate() {
-		return candidate;
-	}
-
-	public void setCandidate(Candidate candidate) {
-		this.candidate = candidate;
-	}
-
-	public String getRegistrationNumber() {
-		return registrationNumber;
-	}
-
-	public void setRegistrationNumber(String registrationNumber) {
-		this.registrationNumber = registrationNumber;
-	}
-
-	public Date getRegistrationOn() {
-		return registrationOn;
-	}
-
-	public void setRegistrationOn(Date registrationOn) {
-		this.registrationOn = registrationOn;
-	}
-
-	public Character getStatus() {
-		return status;
-	}
-
-	public void setStatus(Character status) {
-		this.status = status;
 	}
 
 	public Long getCreateUser() {
@@ -116,6 +81,19 @@ public class CandidateRegistration {
 		this.updateOn = updateOn;
 	}
 
-	
-	
+	public User getUser() {
+		return user;
+	}
+
+	public void setUser(User user) {
+		this.user = user;
+	}
+
+	public MasterEmployeeType getEmployeeType() {
+		return employeeType;
+	}
+
+	public void setEmployeeType(MasterEmployeeType employeeType) {
+		this.employeeType = employeeType;
+	}
 }

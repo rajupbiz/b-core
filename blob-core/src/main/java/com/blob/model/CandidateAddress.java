@@ -23,50 +23,50 @@ public class CandidateAddress {
 	private Long id;
 	
 	@ManyToOne
-	@JoinColumn(name="CandidateID")
+	@JoinColumn(name="candidate_id")
 	private Candidate candidate;
 	
 	@OneToOne
-	@JoinColumn(name="AddressTypeID")
+	@JoinColumn(name="address_type_id")
 	private MasterAddressType addressType;
 
-	@Column(name="AddressLine")
+	@Column(name="address_line")
 	private String addressLine;
 	
-	@Column(name="Landmark")
+	@Column(name="landmark")
 	private String landmark;
 
-	@Column(name="CityOrTown")
+	@Column(name="city_or_town")
 	private String cityOrTown;
 	
-	@Column(name="Tahsil")
+	@Column(name="tahsil")
 	private String tahsil;
 
-	@Column(name="District")
+	@Column(name="district")
 	private String district;
 	
-	@Column(name="State")
+	@Column(name="state")
 	private String state;
 
-	@Column(name="Country")
+	@Column(name="country")
 	private String country;
 	
-	@Column(name="Pincode")
+	@Column(name="pincode")
 	private String pincode;
 	
-	@Column(name="Status")
+	@Column(name="status")
 	private Character status;
 	
-	@Column(name="CreateUser")
+	@Column(name="create_user")
 	private Long createUser;
 	
-	@Column(name="CreateOn")
+	@Column(name="create_on")
 	private Date createOn;
 	
-	@Column(name="UpdateUser")
+	@Column(name="update_user")
 	private Long updateUser;
 	
-	@Column(name="UpdateOn")
+	@Column(name="update_on")
 	private Date updateOn;
 
 	public Long getId() {

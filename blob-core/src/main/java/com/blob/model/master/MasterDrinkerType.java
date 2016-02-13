@@ -17,19 +17,19 @@ public class MasterDrinkerType {
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private Long id;
 	
-	@Column(name="DrinkerType")
+	@Column(name="drinker_type")
 	private String drinkerType;
 	
-	@Column(name="DrinkerTypeDesc")
+	@Column(name="drinker_type_desc")
 	private String drinkerTypeDesc;
 	
-	@Column(name="SequenceNumber")
+	@Column(name="sequence_number")
 	private int sequenceNumber;
 	
-	@Column(name="Status")
+	@Column(name="status")
 	private Character status;
 	
-	@Column(name="CreateOn")
+	@Column(name="create_on")
 	private Date createOn;
 
 	public Long getId() {

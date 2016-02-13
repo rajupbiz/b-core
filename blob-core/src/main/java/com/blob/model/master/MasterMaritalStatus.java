@@ -17,19 +17,19 @@ public class MasterMaritalStatus {
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private Long id;
 	
-	@Column(name="MaritalStatus")
+	@Column(name="marital_status")
 	private String maritalStatus;
 	
-	@Column(name="MaritalStatusDesc")
+	@Column(name="marital_status_desc")
 	private String maritalStatusDesc;
 	
-	@Column(name="SequenceNumber")
+	@Column(name="sequence_number")
 	private int sequenceNumber;
 	
-	@Column(name="Status")
+	@Column(name="status")
 	private Character status;
 	
-	@Column(name="CreateOn")
+	@Column(name="create_on")
 	private Date createOn;
 
 	public Long getId() {

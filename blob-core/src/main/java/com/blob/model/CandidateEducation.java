@@ -20,37 +20,37 @@ public class CandidateEducation {
 	private Long id;
 	
 	@ManyToOne
-	@JoinColumn(name="CandidateID")
+	@JoinColumn(name="candidate_id")
 	private Candidate candidate;
 	
-	@Column(name="Degree")
+	@Column(name="degree")
 	private String degree;
 
-	@Column(name="Subject")
+	@Column(name="subject")
 	private String subject;
 	
-	@Column(name="OtherEducation")
+	@Column(name="other_education")
 	private String otherEducation;
 
-	@Column(name="EducationNote")
+	@Column(name="education_note")
 	private String educationNote;
 	
-	@Column(name="IsHighest")
+	@Column(name="is_highest")
 	private boolean isHighest;
 	
-	@Column(name="Status")
+	@Column(name="status")
 	private Character status;
 	
-	@Column(name="CreateUser")
+	@Column(name="create_user")
 	private Long createUser;
 	
-	@Column(name="CreateOn")
+	@Column(name="create_on")
 	private Date createOn;
 	
-	@Column(name="UpdateUser")
+	@Column(name="update_user")
 	private Long updateUser;
 	
-	@Column(name="UpdateOn")
+	@Column(name="update_on")
 	private Date updateOn;
 
 	public Long getId() {

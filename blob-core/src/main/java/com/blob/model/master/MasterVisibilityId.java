@@ -11,25 +11,25 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name="master_visibility_id")
-public class MasterVisibilityID {
+public class MasterVisibilityId {
 
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private Long id;
 	
-	@Column(name="VisibilityID")
-	private String visibilityID;
+	@Column(name="visibility_id")
+	private String visibilityId;
 	
-	@Column(name="VisibilityIDDesc")
-	private String visibilityIDDesc;
+	@Column(name="visibility_id_desc")
+	private String visibilityIdDesc;
 	
-	@Column(name="SequenceNumber")
+	@Column(name="sequence_number")
 	private int sequenceNumber;
 	
-	@Column(name="Status")
+	@Column(name="status")
 	private Character status;
 	
-	@Column(name="CreateOn")
+	@Column(name="create_on")
 	private Date createOn;
 
 	public Long getId() {
@@ -38,22 +38,6 @@ public class MasterVisibilityID {
 
 	public void setId(Long id) {
 		this.id = id;
-	}
-
-	public String getVisibilityID() {
-		return visibilityID;
-	}
-
-	public void setVisibilityID(String visibilityID) {
-		this.visibilityID = visibilityID;
-	}
-
-	public String getVisibilityIDDesc() {
-		return visibilityIDDesc;
-	}
-
-	public void setVisibilityIDDesc(String visibilityIDDesc) {
-		this.visibilityIDDesc = visibilityIDDesc;
 	}
 
 	public int getSequenceNumber() {
@@ -78,6 +62,22 @@ public class MasterVisibilityID {
 
 	public void setCreateOn(Date createOn) {
 		this.createOn = createOn;
+	}
+
+	public String getVisibilityId() {
+		return visibilityId;
+	}
+
+	public void setVisibilityId(String visibilityId) {
+		this.visibilityId = visibilityId;
+	}
+
+	public String getVisibilityIdDesc() {
+		return visibilityIdDesc;
+	}
+
+	public void setVisibilityIdDesc(String visibilityIdDesc) {
+		this.visibilityIdDesc = visibilityIdDesc;
 	}
 
 	

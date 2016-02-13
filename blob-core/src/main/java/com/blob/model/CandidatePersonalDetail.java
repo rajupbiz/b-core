@@ -20,12 +20,11 @@ public class CandidatePersonalDetail {
 	private Long id;
 	
 	@OneToOne
-	@JoinColumn(name="CandidateID")
+	@JoinColumn(name="candidate_id")
 	private Candidate candidate;
 
 	@Embedded
 	private Person person;
-	
 	
 	public Long getId() {
 		return id;

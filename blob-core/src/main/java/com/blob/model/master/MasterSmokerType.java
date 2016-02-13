@@ -17,19 +17,19 @@ public class MasterSmokerType {
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private Long id;
 	
-	@Column(name="SmokerType")
+	@Column(name="smoker_type")
 	private String smokerType;
 	
-	@Column(name="SmokerTypeDesc")
+	@Column(name="smoker_type_desc")
 	private String smokerTypeDesc;
 	
-	@Column(name="SequenceNumber")
+	@Column(name="sequence_number")
 	private int sequenceNumber;
 	
-	@Column(name="Status")
+	@Column(name="status")
 	private Character status;
 	
-	@Column(name="CreateOn")
+	@Column(name="create_on")
 	private Date createOn;
 
 	public Long getId() {

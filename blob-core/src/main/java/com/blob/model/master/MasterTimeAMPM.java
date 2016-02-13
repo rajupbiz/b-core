@@ -17,19 +17,19 @@ public class MasterTimeAMPM {
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private Long id;
 	
-	@Column(name="TimeAMPM")
+	@Column(name="time_AMPM")
 	private String timeAMPM;
 	
-	@Column(name="TimeAMPMDesc")
+	@Column(name="time_AMPM_desc")
 	private String timeAMPMDesc;
 	
-	@Column(name="SequenceNumber")
+	@Column(name="sequence_number")
 	private int sequenceNumber;
 	
-	@Column(name="Status")
+	@Column(name="status")
 	private Character status;
 	
-	@Column(name="CreateOn")
+	@Column(name="create_on")
 	private Date createOn;
 
 	public Long getId() {

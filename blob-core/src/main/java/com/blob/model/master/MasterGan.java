@@ -17,21 +17,21 @@ public class MasterGan {
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private Long id;
 	
-	@Column(name="Gan")
+	@Column(name="gan")
 	private String gan;
 	
-	@Column(name="GanDesc")
+	@Column(name="gan_desc")
 	private String ganDesc;
 	
-	@Column(name="SequenceNumber")
+	@Column(name="sequence_number")
 	private int sequenceNumber;
 	
-	@Column(name="Status")
+	@Column(name="status")
 	private Character status;
 	
-	@Column(name="CreateOn")
+	@Column(name="create_on")
 	private Date createOn;
-
+	
 	public Long getId() {
 		return id;
 	}

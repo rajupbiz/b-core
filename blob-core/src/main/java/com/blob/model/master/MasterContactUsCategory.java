@@ -17,19 +17,19 @@ public class MasterContactUsCategory {
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private Long id;
 	
-	@Column(name="ContactUsCategory")
+	@Column(name="contact_us_category")
 	private String contactUsCategory;
 	
-	@Column(name="ContactUsCategoryDesc")
+	@Column(name="contact_usCategoryDesc")
 	private String contactUsCategoryDesc;
 	
-	@Column(name="SequenceNumber")
+	@Column(name="sequence_number")
 	private int sequenceNumber;
 	
-	@Column(name="Status")
+	@Column(name="status")
 	private Character status;
 	
-	@Column(name="CreateOn")
+	@Column(name="create_on")
 	private Date createOn;
 
 	public Long getId() {

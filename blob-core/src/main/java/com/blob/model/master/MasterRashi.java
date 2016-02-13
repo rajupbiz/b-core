@@ -17,19 +17,19 @@ public class MasterRashi {
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private Long id;
 	
-	@Column(name="Rashi")
+	@Column(name="rashi")
 	private String rashi;
 	
-	@Column(name="RashiDesc")
+	@Column(name="rashi_desc")
 	private String rashiDesc;
 	
-	@Column(name="SequenceNumber")
+	@Column(name="sequence_number")
 	private int sequenceNumber;
 	
-	@Column(name="Status")
+	@Column(name="status")
 	private Character status;
 	
-	@Column(name="CreateOn")
+	@Column(name="create_on")
 	private Date createOn;
 
 	public Long getId() {

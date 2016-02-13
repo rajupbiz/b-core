@@ -12,35 +12,35 @@ import com.blob.model.master.MasterCommunication;
 @Embeddable
 public class Contact {
 	
-	@Column(name="firstName")
+	@Column(name="first_name")
 	private String firstName;
 	
-	@Column(name="lastName")
+	@Column(name="last_name")
 	private String lastName;
 
-	@Column(name="EmailID")
-	private String emailID;
+	@Column(name="email")
+	private String email;
 	
-	@Column(name="Mobile")
+	@Column(name="mobile")
 	private String mobile;
 	
-	@Column(name="landlinePhone")
+	@Column(name="landline_phone")
 	private String landlinePhone;
 	
 	@OneToOne
-	@JoinColumn(name="PreferredCommunicationID")
+	@JoinColumn(name="preferred_communication_id")
 	private MasterCommunication preferredCommunication;
 
-	@Column(name="SkypeID")
+	@Column(name="skype_id")
 	private String skypeID;
 	
-	@Column(name="LinkedInProfileID")
+	@Column(name="linked_in_profile_id")
 	private String linkedInProfileID;
 	
-	@Column(name="FacebookProfileID")
+	@Column(name="facebook_profile_id")
 	private String facebookProfileID;
 	
-	@Column(name="WebsiteOrBlogID")
+	@Column(name="website_or_blog_id")
 	private String websiteOrBlogID;
 
 	public String getFirstName() {
@@ -57,14 +57,6 @@ public class Contact {
 
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
-	}
-
-	public String getEmailID() {
-		return emailID;
-	}
-
-	public void setEmailID(String emailID) {
-		this.emailID = emailID;
 	}
 
 	public String getMobile() {
@@ -121,6 +113,14 @@ public class Contact {
 
 	public void setWebsiteOrBlogID(String websiteOrBlogID) {
 		this.websiteOrBlogID = websiteOrBlogID;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
 	}
 	
 	

@@ -17,19 +17,19 @@ public class MasterVisibilityField {
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private Long id;
 	
-	@Column(name="VisibilityField")
+	@Column(name="visibility_field")
 	private String visibilityField;
 	
-	@Column(name="VisibilityFieldDesc")
+	@Column(name="visibility_field_desc")
 	private String visibilityFieldDesc;
 	
-	@Column(name="SequenceNumber")
+	@Column(name="sequence_number")
 	private int sequenceNumber;
 	
-	@Column(name="Status")
+	@Column(name="status")
 	private Character status;
 	
-	@Column(name="CreateOn")
+	@Column(name="create_on")
 	private Date createOn;
 
 	public Long getId() {

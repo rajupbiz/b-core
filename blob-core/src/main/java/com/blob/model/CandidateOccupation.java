@@ -8,27 +8,33 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
-import javax.persistence.OneToOne;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="candidate_registration")
-public class CandidateRegistration {
+@Table(name="candidate_occupation")
+public class CandidateOccupation {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
 	
-	@OneToOne
+	@ManyToOne
 	@JoinColumn(name="candidate_id")
 	private Candidate candidate;
 	
-	@Column(name="registration_number")
-	private String registrationNumber;
+	@Column(name="occupation")
+	private String occupation;
 
-	@Column(name="registration_on")
-	private Date registrationOn;
+	@Column(name="designation")
+	private String designation;
 	
+	@Column(name="yearly_income")
+	private int yearlyIncome;
+
+	@Column(name="occupation_note")
+	private String occupationNote;
+		
 	@Column(name="status")
 	private Character status;
 	
@@ -60,20 +66,36 @@ public class CandidateRegistration {
 		this.candidate = candidate;
 	}
 
-	public String getRegistrationNumber() {
-		return registrationNumber;
+	public String getOccupation() {
+		return occupation;
 	}
 
-	public void setRegistrationNumber(String registrationNumber) {
-		this.registrationNumber = registrationNumber;
+	public void setOccupation(String occupation) {
+		this.occupation = occupation;
 	}
 
-	public Date getRegistrationOn() {
-		return registrationOn;
+	public String getDesignation() {
+		return designation;
 	}
 
-	public void setRegistrationOn(Date registrationOn) {
-		this.registrationOn = registrationOn;
+	public void setDesignation(String designation) {
+		this.designation = designation;
+	}
+
+	public int getYearlyIncome() {
+		return yearlyIncome;
+	}
+
+	public void setYearlyIncome(int yearlyIncome) {
+		this.yearlyIncome = yearlyIncome;
+	}
+
+	public String getOccupationNote() {
+		return occupationNote;
+	}
+
+	public void setOccupationNote(String occupationNote) {
+		this.occupationNote = occupationNote;
 	}
 
 	public Character getStatus() {
@@ -115,7 +137,6 @@ public class CandidateRegistration {
 	public void setUpdateOn(Date updateOn) {
 		this.updateOn = updateOn;
 	}
-
 	
 	
 }

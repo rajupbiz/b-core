@@ -27,101 +27,101 @@ public class Person {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;*/
 
-	@Column(name="FirstName")
+	@Column(name="first_name")
 	private String firstName;
 
-	@Column(name="LastName")
+	@Column(name="last_name")
 	private String lastName;
 	
-	@Column(name="MiddleName")
+	@Column(name="middle_name")
 	private String middleName;
 	
-	@Column(name="AboutMe")
+	@Column(name="about_me")
 	private String aboutMe;
 	
 	@ManyToOne
-	@JoinColumn(name="GenderID")
+	@JoinColumn(name="gender_id")
 	private MasterGender gender;
 	
-	@Column(name="Height")
+	@Column(name="height")
 	private float height;
 	
-	@Column(name="Weight")
+	@Column(name="weight")
 	private float weight;
 	
 	@ManyToOne
-	@JoinColumn(name="BloodGroupID")
+	@JoinColumn(name="blood_group_id")
 	private MasterBloodGroup bloodGroup;
 	
 	@ManyToOne
-	@JoinColumn(name="MaritalStatusID")
+	@JoinColumn(name="marital_status_id")
 	private MasterMaritalStatus maritalStatus;
 	
 	@ManyToOne
-	@JoinColumn(name="MarriageTypeID")
+	@JoinColumn(name="marriage_type_id")
 	private MasterMarriageType marriageType;
 	
 	@ManyToOne
-	@JoinColumn(name="ReligionID")
+	@JoinColumn(name="religion_id")
 	private MasterReligion religion;
 	
 	@ManyToOne
-	@JoinColumn(name="MotherTongueID")
+	@JoinColumn(name="mother_tongue_id")
 	private MasterMotherTongue motherTongue;
 	
-	@Column(name="Caste")
+	@Column(name="caste")
 	private String caste;
 	
-	@Column(name="Gotra")
+	@Column(name="gotra")
 	private String gotra;
 	
-	@Column(name="Devak")
+	@Column(name="devak")
 	private String devak;
 	
-	@Column(name="Complextion")
+	@Column(name="complextion")
 	private String complextion;
 	
-	@Column(name="Personality")
+	@Column(name="personality")
 	private String personality;
 	
-	@Column(name="Specs")
+	@Column(name="specs")
 	private String specs;
 	
-	@Column(name="Lens")
+	@Column(name="lens")
 	private String lens;
 	
 	@ManyToOne
-	@JoinColumn(name="BodyTypeID")
+	@JoinColumn(name="body_type_id")
 	private MasterBodyType bodyType;
 	
 	@ManyToOne
-	@JoinColumn(name="FoodTypeID")
+	@JoinColumn(name="food_type_id")
 	private MasterFoodType foodType;
 	
-	@Column(name="Hobby")
+	@Column(name="hobby")
 	private String hobby;
 	
-	@Column(name="Handicaped")
+	@Column(name="handicaped")
 	private boolean handicaped;
 	
-	@Column(name="HandicapDetail")
+	@Column(name="handicap_detail")
 	private String handicapDetail;
 	
 	@ManyToOne
-	@JoinColumn(name="SmokerTypeID")
+	@JoinColumn(name="smoker_type_id")
 	private MasterSmokerType smokerType;
 	
 	@ManyToOne
-	@JoinColumn(name="DrinkerTypeID")
+	@JoinColumn(name="drinker_type_id")
 	private MasterDrinkerType drinkerType;
 	
-	@Column(name="CreateOn")
+	@Column(name="create_on")
 	private Date createOn;
 	
-	@Column(name="UpdateUser")
+	@Column(name="update_user")
 	private Long updateUser;
 	
-	@Column(name="UpdateOn")
+	@Column(name="update_on")
 	private Date updateOn;
 
 	public String getFirstName() {

@@ -17,19 +17,19 @@ public class MasterAddressType {
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private Long id;
 	
-	@Column(name="AddressTypeName")
+	@Column(name="address_type_name")
 	private String addressTypeName;
 	
-	@Column(name="AddressTypeDesc")
+	@Column(name="address_type_desc")
 	private String addressTypeDesc;
 	
-	@Column(name="SequenceNumber")
+	@Column(name="sequence_number")
 	private int sequenceNumber;
 	
 	@Column(name="Status")
 	private Character status;
 	
-	@Column(name="CreateOn")
+	@Column(name="create_on")
 	private Date createOn;
 
 	public Long getId() {

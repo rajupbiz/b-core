@@ -1,6 +1,6 @@
 package com.blob.model;
 
-import java.sql.Date;
+import java.util.Date;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -8,26 +8,26 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
-import javax.persistence.OneToOne;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
+import com.blob.model.master.MasterRole;
+
 @Entity
-@Table(name="candidate_registration")
-public class CandidateRegistration {
+@Table(name="user_role")
+public class UserRole {
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
+	@GeneratedValue(strategy=GenerationType.AUTO)
 	private Long id;
 	
-	@OneToOne
-	@JoinColumn(name="candidate_id")
-	private Candidate candidate;
+	@ManyToOne
+	@JoinColumn(name="user_id")
+	private User user;
 	
-	@Column(name="registration_number")
-	private String registrationNumber;
-
-	@Column(name="registration_on")
-	private Date registrationOn;
+	@ManyToOne
+	@JoinColumn(name="role_id")
+	private MasterRole role;
 	
 	@Column(name="status")
 	private Character status;
@@ -52,28 +52,20 @@ public class CandidateRegistration {
 		this.id = id;
 	}
 
-	public Candidate getCandidate() {
-		return candidate;
+	public User getUser() {
+		return user;
 	}
 
-	public void setCandidate(Candidate candidate) {
-		this.candidate = candidate;
+	public void setUser(User user) {
+		this.user = user;
 	}
 
-	public String getRegistrationNumber() {
-		return registrationNumber;
+	public MasterRole getRole() {
+		return role;
 	}
 
-	public void setRegistrationNumber(String registrationNumber) {
-		this.registrationNumber = registrationNumber;
-	}
-
-	public Date getRegistrationOn() {
-		return registrationOn;
-	}
-
-	public void setRegistrationOn(Date registrationOn) {
-		this.registrationOn = registrationOn;
+	public void setRole(MasterRole role) {
+		this.role = role;
 	}
 
 	public Character getStatus() {
@@ -115,7 +107,6 @@ public class CandidateRegistration {
 	public void setUpdateOn(Date updateOn) {
 		this.updateOn = updateOn;
 	}
-
 	
 	
 }

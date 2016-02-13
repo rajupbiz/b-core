@@ -38,4 +38,70 @@ public class Candidate {
 	
 	@OneToMany(mappedBy="candidate")
 	private List<CandidateAddress> candidateAddress;
+
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+	public List<CandidateShortlistedProfile> getShortlistedCandidates() {
+		return shortlistedCandidates;
+	}
+
+	public void setShortlistedCandidates(
+			List<CandidateShortlistedProfile> shortlistedCandidates) {
+		this.shortlistedCandidates = shortlistedCandidates;
+	}
+
+	public CandidatePersonalDetail getCandidatePersonalDetail() {
+		return candidatePersonalDetail;
+	}
+
+	public void setCandidatePersonalDetail(
+			CandidatePersonalDetail candidatePersonalDetail) {
+		this.candidatePersonalDetail = candidatePersonalDetail;
+	}
+
+	public CandidateFamily getCandidateFamily() {
+		return candidateFamily;
+	}
+
+	public void setCandidateFamily(CandidateFamily candidateFamily) {
+		this.candidateFamily = candidateFamily;
+	}
+
+	public CandidateAstroDetail getCandidateAstroDetail() {
+		return candidateAstroDetail;
+	}
+
+	public void setCandidateAstroDetail(CandidateAstroDetail candidateAstroDetail) {
+		this.candidateAstroDetail = candidateAstroDetail;
+	}
+
+	public CandidateExpectation getCandidateExpectation() {
+		return candidateExpectation;
+	}
+
+	public void setCandidateExpectation(CandidateExpectation candidateExpectation) {
+		this.candidateExpectation = candidateExpectation;
+	}
+
+	public List<CandidateEducation> getCandidateEducation() {
+		return candidateEducation;
+	}
+
+	public void setCandidateEducation(List<CandidateEducation> candidateEducation) {
+		this.candidateEducation = candidateEducation;
+	}
+
+	public List<CandidateAddress> getCandidateAddress() {
+		return candidateAddress;
+	}
+
+	public void setCandidateAddress(List<CandidateAddress> candidateAddress) {
+		this.candidateAddress = candidateAddress;
+	}
 }

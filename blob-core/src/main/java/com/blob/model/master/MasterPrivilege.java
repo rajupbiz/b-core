@@ -17,19 +17,19 @@ public class MasterPrivilege {
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private Long id;
 	
-	@Column(name="Privilege")
+	@Column(name="privilege")
 	private String privilege;
 	
-	@Column(name="PrivilegeDesc")
+	@Column(name="privilege_desc")
 	private String privilegeDesc;
 	
-	@Column(name="SequenceNumber")
+	@Column(name="sequence_number")
 	private int sequenceNumber;
 	
-	@Column(name="Status")
+	@Column(name="status")
 	private Character status;
 	
-	@Column(name="CreateOn")
+	@Column(name="create_on")
 	private Date createOn;
 
 	public Long getId() {

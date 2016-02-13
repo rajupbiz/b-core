@@ -20,79 +20,79 @@ public class CandidateFamily {
 	private Long id;
 	
 	@OneToOne
-	@JoinColumn(name="CandidateID")
+	@JoinColumn(name="candidate_id")
 	private Candidate candidate;
 	
-	@Column(name="AboutFamily")
+	@Column(name="about_family")
 	private String aboutFamily;
 
-	@Column(name="FatherFirstName")
+	@Column(name="father_first_name")
 	private String fatherFirstName;
 	
-	@Column(name="FatherLastName")
+	@Column(name="father_last_name")
 	private String fatherLastName;
 	
-	@Column(name="FathersOccupation")
+	@Column(name="fathers_occupation")
 	private String fathersOccupation;
 	
-	@Column(name="FathersYearlyIncome")
+	@Column(name="fathers_yearly_income")
 	private double fathersYearlyIncome;
 	
-	@Column(name="MotherFirstName")
+	@Column(name="mother_first_name")
 	private String motherFirstName;
 	
-	@Column(name="MothersOccupation")
+	@Column(name="mothers_occupation")
 	private String mothersOccupation;
 	
-	@Column(name="MothersYearlyIncome")
+	@Column(name="mothers_yearly_income")
 	private double mothersYearlyIncome;
 	
-	@Column(name="NativePlace")
+	@Column(name="native_place")
 	private String nativePlace;
 	
-	@Column(name="NoOfBrother")
+	@Column(name="no_of_brother")
 	private int noOfBrother;
 	
-	@Column(name="NoOfSister")
+	@Column(name="no_of_sister")
 	private int noOfSister;
 	
-	@Column(name="NoOfMarriedBrother")
+	@Column(name="no_of_married_brother")
 	private int noOfMarriedBrother;
 	
-	@Column(name="NoOfMarriedSister")
+	@Column(name="no_of_married_sister")
 	private int noOfMarriedSister;
 	
-	@Column(name="IntercastInFamily")
+	@Column(name="intercast_in_family")
 	private boolean intercastInFamily;
 	
-	@Column(name="IntercastDetail")
+	@Column(name="intercast_detail")
 	private String intercastDetail;
 	
-	@Column(name="FamilyWealth")
+	@Column(name="family_wealth")
 	private String familyWealth;
 	
-	@Column(name="MamasFirstName")
+	@Column(name="mamas_first_name")
 	private String mamasFirstName;
 	
-	@Column(name="MamasLastName")
+	@Column(name="mamas_last_name")
 	private String mamasLastName;
 	
-	@Column(name="MamasNativePlace")
+	@Column(name="mamas_native_place")
 	private String mamasNativePlace;
 	
-	@Column(name="Relatives")
+	@Column(name="relatives")
 	private String relatives;
 	
-	@Column(name="CreateUser")
+	@Column(name="create_user")
 	private Long createUser;
 	
-	@Column(name="CreateOn")
+	@Column(name="create_on")
 	private Date createOn;
 	
-	@Column(name="UpdateUser")
+	@Column(name="update_user")
 	private Long updateUser;
 	
-	@Column(name="UpdateOn")
+	@Column(name="update_on")
 	private Date updateOn;
 
 	public Long getId() {

@@ -20,53 +20,53 @@ public class CandidateExpectation {
 	private Long id;
 	
 	@OneToOne
-	@JoinColumn(name="CandidateID")
+	@JoinColumn(name="candidate_id")
 	private Candidate candidate;
 	
-	@Column(name="AgeDiffrenceMax")
+	@Column(name="age_diffrence_max")
 	private int ageDiffrenceMax;
 
-	@Column(name="AgeDiffrenceMin")
+	@Column(name="age_diffrence_min")
 	private int ageDiffrenceMin;
 	
-	@Column(name="HightDiffrenceMax")
+	@Column(name="hight_diffrence_max")
 	private float hightDiffrenceMax;
 	
-	@Column(name="HeightDiffrenceMin")
+	@Column(name="height_diffrence_min")
 	private float heightDiffrenceMin;
 	
-	@Column(name="Education")
+	@Column(name="education")
 	private String education;
 	
-	@Column(name="Occupation")
+	@Column(name="occupation")
 	private String occupation;
 	
 	// TODO : need to confirm column names for Yealy income
-	@Column(name="YearlyIncomeMin")
+	@Column(name="yearly_income_min")
 	private int yearlyIncomeMin;
 	
-	@Column(name="YearlyIncomeMax")
+	@Column(name="yearly_income_max")
 	private int yearlyIncomeMax;
 	
-	@Column(name="Location")
+	@Column(name="location")
 	private String location;
 	
-	@Column(name="Mangal")
+	@Column(name="mangal")
 	private boolean mangal;
 	
-	@Column(name="ExpectationNote")
+	@Column(name="expectation_note")
 	private String expectationNote;
 	
-	@Column(name="CreateUser")
+	@Column(name="create_user")
 	private Long createUser;
 	
-	@Column(name="CreateOn")
+	@Column(name="create_on")
 	private Date createOn;
 	
-	@Column(name="UpdateUser")
+	@Column(name="update_user")
 	private Long updateUser;
 	
-	@Column(name="UpdateOn")
+	@Column(name="update_on")
 	private Date updateOn;
 
 	public Long getId() {

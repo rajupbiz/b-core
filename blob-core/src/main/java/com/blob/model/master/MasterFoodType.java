@@ -17,19 +17,19 @@ public class MasterFoodType {
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private Long id;
 	
-	@Column(name="FoodType")
+	@Column(name="food_type")
 	private String foodType;
 	
-	@Column(name="FoodTypeDesc")
+	@Column(name="food_type_desc")
 	private String foodTypeDesc;
 	
-	@Column(name="SequenceNumber")
+	@Column(name="sequence_number")
 	private int sequenceNumber;
 	
-	@Column(name="Status")
+	@Column(name="status")
 	private Character status;
 	
-	@Column(name="CreateOn")
+	@Column(name="create_on")
 	private Date createOn;
 
 	public Long getId() {

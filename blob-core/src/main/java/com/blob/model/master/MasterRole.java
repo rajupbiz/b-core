@@ -17,19 +17,19 @@ public class MasterRole {
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private Long id;
 	
-	@Column(name="Role")
+	@Column(name="role")
 	private String role;
 	
-	@Column(name="RoleDesc")
+	@Column(name="role_desc")
 	private String roleDesc;
 	
-	@Column(name="SequenceNumber")
+	@Column(name="sequence_number")
 	private int sequenceNumber;
 	
-	@Column(name="Status")
+	@Column(name="status")
 	private Character status;
 	
-	@Column(name="CreateOn")
+	@Column(name="create_on")
 	private Date createOn;
 
 	public Long getId() {

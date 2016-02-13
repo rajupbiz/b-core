@@ -1,6 +1,6 @@
 package com.blob.model;
 
-import java.sql.Date;
+import java.util.Date;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -8,26 +8,24 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
-import javax.persistence.OneToOne;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="candidate_registration")
-public class CandidateRegistration {
+@Table(name="profile_visit_log")
+public class ProfileVisitLog {
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
+	@GeneratedValue(strategy=GenerationType.AUTO)
 	private Long id;
 	
-	@OneToOne
-	@JoinColumn(name="candidate_id")
-	private Candidate candidate;
+	@ManyToOne
+	@JoinColumn(name="visitor_user_id")
+	private User visitorUser;
 	
-	@Column(name="registration_number")
-	private String registrationNumber;
-
-	@Column(name="registration_on")
-	private Date registrationOn;
+	@ManyToOne
+	@JoinColumn(name="visited_user_id")
+	private User visitedUser;
 	
 	@Column(name="status")
 	private Character status;
@@ -50,30 +48,6 @@ public class CandidateRegistration {
 
 	public void setId(Long id) {
 		this.id = id;
-	}
-
-	public Candidate getCandidate() {
-		return candidate;
-	}
-
-	public void setCandidate(Candidate candidate) {
-		this.candidate = candidate;
-	}
-
-	public String getRegistrationNumber() {
-		return registrationNumber;
-	}
-
-	public void setRegistrationNumber(String registrationNumber) {
-		this.registrationNumber = registrationNumber;
-	}
-
-	public Date getRegistrationOn() {
-		return registrationOn;
-	}
-
-	public void setRegistrationOn(Date registrationOn) {
-		this.registrationOn = registrationOn;
 	}
 
 	public Character getStatus() {
@@ -116,6 +90,21 @@ public class CandidateRegistration {
 		this.updateOn = updateOn;
 	}
 
+	public User getVisitorUser() {
+		return visitorUser;
+	}
+
+	public void setVisitorUser(User visitorUser) {
+		this.visitorUser = visitorUser;
+	}
+
+	public User getVisitedUser() {
+		return visitedUser;
+	}
+
+	public void setVisitedUser(User visitedUser) {
+		this.visitedUser = visitedUser;
+	}
 	
 	
 }

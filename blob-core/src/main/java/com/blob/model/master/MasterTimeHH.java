@@ -17,19 +17,19 @@ public class MasterTimeHH {
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private Long id;
 	
-	@Column(name="TimeHH")
+	@Column(name="time_HH")
 	private String timeHH;
 	
-	@Column(name="TimeHHDesc")
+	@Column(name="time_HH_desc")
 	private String timeHHDesc;
 	
-	@Column(name="SequenceNumber")
+	@Column(name="sequence_number")
 	private int sequenceNumber;
 	
-	@Column(name="Status")
+	@Column(name="status")
 	private Character status;
 	
-	@Column(name="CreateOn")
+	@Column(name="create_on")
 	private Date createOn;
 
 	public Long getId() {

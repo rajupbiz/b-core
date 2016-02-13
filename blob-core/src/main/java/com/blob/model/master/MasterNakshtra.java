@@ -17,19 +17,19 @@ public class MasterNakshtra {
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private Long id;
 	
-	@Column(name="Nakshtra")
+	@Column(name="nakshtra")
 	private String nakshtra;
 	
-	@Column(name="NakshtraDesc")
+	@Column(name="nakshtra_desc")
 	private String nakshtraDesc;
 	
-	@Column(name="SequenceNumber")
+	@Column(name="sequence_number")
 	private int sequenceNumber;
 	
-	@Column(name="Status")
+	@Column(name="status")
 	private Character status;
 	
-	@Column(name="CreateOn")
+	@Column(name="create_on")
 	private Date createOn;
 
 	public Long getId() {
